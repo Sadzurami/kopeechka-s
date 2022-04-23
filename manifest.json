@@ -1,0 +1,442 @@
+{
+	"name": "KopeechkaS",
+	"info": {
+		"en": "Working with cloud-based inbox email service Kopeechka.store",
+		"ru": "Работа с облачным сервисом входящей электронной почты Kopeechka.store"
+	},
+	"icon": "icon.png",
+	"description": "Working with Kopeechka.store emails",
+	"description_small": {
+		"en": "Kopeechka.store emails",
+		"ru": "Почты Kopeechka.store"
+	},
+	"major_version": 1,
+	"minor_version": 7,
+	"developer_name": "Sadzurami",
+	"developer_email": "mail.to.sadzurami@gmail.com",
+	"developer_site": "https://community.bablosoft.com/user/sadzurami",
+	"api_version": 1,
+	"actions": [
+		{
+			"name": "ks_settings",
+			"description": {
+				"en": "Default settings",
+				"ru": "Настройки по умолчанию"
+			},
+			"template": "KopeechkaS",
+			"is_element": false,
+			"interface": "ks_settings_interface.js",
+			"select": "ks_settings_select.js",
+			"code": [
+				{
+					"file": "ks_settings_code.js",
+					"name": "ks_settings_code"
+				}
+			]
+		},
+		{
+			"name": "ks_get_email",
+			"description": {
+				"en": "Get email address",
+				"ru": "Получить эл. адрес"
+			},
+			"template": "{{site}} ({{mail_type}}) -> {{Save}}",
+			"is_element": false,
+			"interface": "ks_get_email_interface.js",
+			"select": "ks_get_email_select.js",
+			"code": [
+				{
+					"file": "ks_get_email_code.js",
+					"name": "ks_get_email_code"
+				}
+			]
+		},
+		{
+			"name": "ks_get_message",
+			"description": {
+				"en": "Get message",
+				"ru": "Получить сообщение"
+			},
+			"template": "{{email}} -> {{Save}},{{messageFull}}",
+			"is_element": false,
+			"interface": "ks_get_message_interface.js",
+			"select": "ks_get_message_select.js",
+			"code": [
+				{
+					"file": "ks_get_message_code.js",
+					"name": "ks_get_message_code"
+				}
+			]
+		},
+		{
+			"name": "ks_close_email",
+			"description": {
+				"en": "Close email",
+				"ru": "Закрыть почту"
+			},
+			"template": "{{email}}",
+			"is_element": false,
+			"interface": "ks_close_email_interface.js",
+			"select": "ks_close_email_select.js",
+			"code": [
+				{
+					"file": "ks_close_email_code.js",
+					"name": "ks_close_email_code"
+				}
+			]
+		},
+		{
+			"name": "ks_get_domains",
+			"description": {
+				"en": "Get domains",
+				"ru": "Получить домены"
+			},
+			"template": "{{domains}}",
+			"is_element": false,
+			"interface": "ks_get_domains_interface.js",
+			"select": "ks_get_domains_select.js",
+			"code": [
+				{
+					"file": "ks_get_domains_code.js",
+					"name": "ks_get_domains_code"
+				}
+			]
+		},
+		{
+			"name": "ks_get_balance",
+			"description": {
+				"en": "Get balance",
+				"ru": "Получить баланс"
+			},
+			"template": "{{token}} -> {{Save}}",
+			"is_element": false,
+			"interface": "ks_get_balance_interface.js",
+			"select": "ks_get_balance_select.js",
+			"code": [
+				{
+					"file": "ks_get_balance_code.js",
+					"name": "ks_get_balance_code"
+				}
+			]
+		}
+	],
+	"localize": {
+		"Storage model": { "ru": "Модель хранилища" },
+		"Store locally": { "ru": "Хранить локально" },
+		"Store globally": { "ru": "Хранить глобально" },
+		"Store in resource": { "ru": "Хранить в ресурсе" },
+		"<code>Be very careful using this type of storage. Read more in the description below.</code>": {
+			"ru": "<code>Будьте очень внимательны, используя этот тип хранилища. Подробнее читайте в описании ниже.</code>"
+		},
+		"Reassigning errors": { "ru": "Переназначение ошибок" },
+		"It is recommended to leave the default settings": {
+			"ru": "Рекомендуется оставить настройки по умолчанию"
+		},
+		"Error codes that calls <code>Fail</code> action.": {
+			"ru": "Коды ошибок, вызывающие действие <code>Fail</code>."
+		},
+		"Multiple error codes.": { "ru": "Множество кодов ошибок." },
+		"Must be separated by <code>,</code>.": {
+			"ru": "Должны быть разделены <code>,</code>."
+		},
+		"Dont restart thread.": { "ru": "Не перезапускать поток." },
+		"Script End": { "ru": "Прервать Скрипт" },
+		"Error codes that calls <code>Script End</code> action.": {
+			"ru": "Коды ошибок, вызывающие действие <code>Прервать Скрипт</code>."
+		},
+		"Error codes to ignore.": {
+			"ru": "Коды ошибок, которые нужно игнорировать."
+		},
+		"Use secure SSL connection": {
+			"ru": "Использовать безопасное SSL-соединение"
+		},
+		"Enable debug mode": { "ru": "Включить режим отладки" },
+		"Apply globally": { "ru": "Применить глобально" },
+		"Set default settings": { "ru": "Установить настройки по умолчанию" },
+		"It is good practice to use this action at the beginning of the thread or in the \"OnApplicationStart\" function.": {
+			"ru": "Рекомендуется использовать это действие в начале потока или в функции \"OnApplicationStart\"."
+		},
+		"Module stores emails data in RAM.": {
+			"ru": "Модуль хранит данные эл. почты в оперативной памяти."
+		},
+		"Depending on your tasks you can choose the storage model: local, global, resource.": {
+			"ru": "В зависимости от ваших задач вы можете выбрать модель хранилища: local, global, resource."
+		},
+		"This threads emails will not be available to other threads.": {
+			"ru": "Эл. почта этого потока не будет доступна другим потокам."
+		},
+		"All threads can access any email data in this storage.": {
+			"ru": "Все потоки могут получить доступ к любым данным эл. почты в этом хранилище."
+		},
+		"Same as \"global\" model, but a bit slower.": {
+			"ru": "То же, что и модель \"global\", но немного медленнее."
+		},
+		"<code>Storage models \"global\" and \"resource\" cannot be cleared automatically.</code>": {
+			"ru": "<code>Модели хранения \"global\" и \"resource\" не могут быть очищены автоматически.</code>"
+		},
+		"To avoid memory leaks using \"global\" and \"resource\" models, it is necessary to close the email.": {
+			"ru": "Во избежание утечек памяти при использовании моделей \"global\" и \"resource\", эл. почту необходимо закрывать."
+		},
+		"The \"local\" storage model is cleared automatically when the thread ends.": {
+			"ru": "Модель хранилища \"local\" очищается автоматически при завершении потока."
+		},
+		"More info about errors": { "ru": "Подробнее об ошибках" },
+		"Token": { "ru": "Токен" },
+		"Token for API access, you can find it in your personal cabinet.": {
+			"ru": "Токен для доступа к API, вы можете найти его в личном кабинете."
+		},
+		"The site for which you are ordering email.": {
+			"ru": "Сайт, для которого вы заказываете почту."
+		},
+		"Get an email that can be used on multiple sites.": {
+			"ru": "Получить эл. почту, которую можно использовать на нескольких сайтах."
+		},
+		"All fields of this group are optional": {
+			"ru": "Все поля этой группы необязательны"
+		},
+		"Domains": { "ru": "Домены" },
+		"Service's personal domains": { "ru": "Личные домены сервиса" },
+		"Well-known domains": { "ru": "Хорошо известные домены" },
+		"Yandex domains group": { "ru": "Группа доменов Яндекса" },
+		"Outlook/Hotmail group": { "ru": "Группа Outlook/Hotmail" },
+		"Mail.com domains group": { "ru": "Группа доменов Mail.com" },
+		"Mail.ru domains group": { "ru": "Группа доменов Mail.ru" },
+		"Rambler domains group": { "ru": "Группа доменов Рамблера" },
+		"GMX domains group": { "ru": "Группа доменов GMX" },
+		"Domains or mail group names that you want to receive.": {
+			"ru": "Домены или имена почтовых групп, которые вы хотите получать."
+		},
+		"The list of domains can be obtained using the \"get domains \" action.": {
+			"ru": "Список доменов можно получить с помощью действия \"получить домены \"."
+		},
+		"One domain": { "ru": "Один домен" },
+		"Several domains.": { "ru": "Несколько доменов." },
+		"leave blank": { "ru": "оставить пустым" },
+		"Allow service to select automatically.": {
+			"ru": "Разрешить сервису выбирать автоматически."
+		},
+		"Sender": { "ru": "Отправитель" },
+		"The sender you are expecting the message from.": {
+			"ru": "Отправитель, от которого вы ожидаете сообщение."
+		},
+		"Multiple senders": { "ru": "Множество отправителей" },
+		"if you are ordering email for multiple sites.": {
+			"ru": "если вы заказываете почту для нескольких сайтов."
+		},
+		"The order should be the same as in the \"Site\" field.": {
+			"ru": "Порядок должен быть таким же, как в поле \"Сайт\"."
+		},
+		"Subject": { "ru": "Тема" },
+		"Message subject.": { "ru": "Тема сообщения." },
+		"Get the first message from the sender.": {
+			"ru": "Получить первое сообщение отправителя."
+		},
+		"Email address": { "ru": "Адрес эл. почты" },
+		"Email address you received earlier.": {
+			"ru": "Адрес эл. почты, полученный ранее."
+		},
+		"Reorder email address.": { "ru": "Повторный заказ эл. почты." },
+		"Get new email address.": { "ru": "Получить новый адрес эл. почты." },
+		"Regular expression": { "ru": "Регулярное выражение" },
+		"Regular expression applied to the message.": {
+			"ru": "Регулярное выражение, применяемое к сообщению."
+		},
+		"If the message is \"code:12345\", then after conversion you will get <code>12345</code>": {
+			"ru": "Если сообщение имеет вид \"code:12345\", то после преобразования вы получите <code>12345</code>."
+		},
+		"Multiple regular expressions": {
+			"ru": "Множество регулярных выражений"
+		},
+		"Must be separated by <code>|,|</code>.": {
+			"ru": "Должны быть разделены <code>|,|</code>."
+		},
+		"Server will parse the message automatically.": {
+			"ru": "Сервер будет парсить сообщение автоматически."
+		},
+		"Exclude email addresses with special characters": {
+			"ru": "Исключить адреса эл. почты со специальными символами"
+		},
+		"Receive my email addresses": { "ru": "Получать мои адреса эл. почты" },
+		"Requests delivery": { "ru": "Доставка запросов" },
+		"It is recommended to leave the default settings, or increase them if you have a slow Internet connection": {
+			"ru": "Рекомендуется оставить настройки по умолчанию или увеличить их, если у вас медленное интернет-соединение"
+		},
+		"Timeout": { "ru": "Таймаут" },
+		"Maximum waiting time per request.": {
+			"ru": "Максимальное время ожидания одного запроса."
+		},
+		"Wait 1 second.": { "ru": "Ждать 1 секунду." },
+		"Wait 5 seconds.": { "ru": "Ждать 5 секунд." },
+		"Wait 10 seconds.": { "ru": "Ждать 10 секунд." },
+		"Interval": { "ru": "Интервал" },
+		"Interval for sending requests.": {
+			"ru": "Интервал отправки запросов."
+		},
+		"Send request every second.": {
+			"ru": "Отправить запрос каждую секунду."
+		},
+		"Send request every 5 seconds.": {
+			"ru": "Отправить запрос каждые 5 секунд."
+		},
+		"Send request every 10 seconds.": {
+			"ru": "Отправить запрос каждые 10 секунд."
+		},
+		"Failed to get email.": {
+			"ru": "Не удалось получить адресс эп. почты."
+		},
+		"Strict mode": { "ru": "Строгий режим" },
+		"Ordering a new or reusing an existing email address": {
+			"ru": "Заказ нового или повторное использование имеющегося адреса эл. почты"
+		},
+		"<code>Attention!</code>": { "ru": "<code>Внимание!</code>" },
+		"On success, this action will return <code>string</code>": {
+			"ru": "В случае успеха это действие вернёт <code>строку</code>"
+		},
+		"which contains email address.": {
+			"ru": ", содержащаю адресс эл. почты."
+		},
+		"If the execution time expires, this action will return <code>null</code>.": {
+			"ru": "Если время выполнения истечет, это действие вернёт <code>null</code>."
+		},
+		"Regular expressions are applied at the server level.": {
+			"ru": "Регулярные выражения применяются на уровне сервера."
+		},
+		"By default, this action runs in <code>strict mode</code>. This means that <code>Fail</code> action will be called if any common error occurs.": {
+			"ru": "По умолчанию это действие выполняется в <code>строгом режиме</code>. Это означает, что действие <code>Fail</code> будет вызвано при возникновении любой обычной ошибки."
+		},
+		"If <code>strict mode</code> is disabled - common errors will be ignored and action will be executed until success.": {
+			"ru": "Если <code>строгий режим</code> отключён - обычные ошибки будут игнорироваться, действие будет выполняться до достижения успеха."
+		},
+		"Fatal errors, such as <code>BAD_BALANCE</code>, calls <code>End Script</code> action.": {
+			"ru": "Критические ошибки, такие как <code>BAD_BALANCE</code>, вызывают действие <code>Прервать Скрипт</code>."
+		},
+		"<code>Fail</code> errors can be handled with the <code>Ignore Errors</code> action, but <code>Script end</code> errors can't be handled.": {
+			"ru": "Ошибки типа <code>Fail</code> могут быть обработаны действием <code>Игнорировать ошибки</code>, однако ошибки типа <code>Прервать Скрипт</code> обработать не получится."
+		},
+		"If you want to change the behavior for a specific error, use the <code>Default Settings</code> action.": {
+			"ru": "Если вы хотите изменить поведение при определённой ошибке, используйте действие <code>Настройки по умолчанию</code>."
+		},
+		"More info about the API used here": {
+			"ru": "Подробнее об используемом здесь API"
+		},
+		"My account": { "ru": "Мой аккаунт" },
+		"Get full message anyway": {
+			"ru": "Получать полное сообщение в любом случае"
+		},
+		"Full message": { "ru": "Полное сообщение" },
+		"Failed to get full message": {
+			"ru": "Не удалось получить полное сообщение"
+		},
+		"Parsed value from message": {
+			"ru": "Распаршенное значение из сообщения"
+		},
+		"Failed to get parsed message": {
+			"ru": "Не удалось распарсить сообщение"
+		},
+		"Receiving an incoming message": {
+			"ru": "Получение входящего сообщения"
+		},
+		"which contains parsed value from message.": {
+			"ru": ", содержащаю распаршенное значение из сообщения."
+		},
+		"Otherwise <code>null</code> will be returned": {
+			"ru": "В противном случае будет возвращён <code>null</code>"
+		},
+		"The full message will be returned if the checkbox is checked or the message cannot be parsed.": {
+			"ru": "Полное сообщение будет возвращено, если установлен флажок или сообщение не может быть распаршено."
+		},
+		"The server will parse the message correctly if you specify a regular message in <code>Get email address</code> action.": {
+			"ru": "Сервер будет парсить сообщение правильно, если вы укажете регулярное выражение в действии <code>Получить эл.адрес</code>."
+		},
+		"Close email on server side": {
+			"ru": "Закрыть почту на стороне сервера"
+		},
+		"Close or cancel email": { "ru": "Закрыть или отменить почту" },
+		"This action removes email information from the storage, thereby freeing up the reserved RAM.": {
+			"ru": "Это действие удаляет информацию эл. почты из хранилища, тем самым освобождая зарезервированную оперативную память."
+		},
+		"Also this action can close/cancel emails on the server side.": {
+			"ru": "Также это действие может закрыть/отменить эл. почту на стороне сервера."
+		},
+		"The type of domains you want to get.": {
+			"ru": "Тип доменов, которые вы хотите получить."
+		},
+		"Sorting by price": { "ru": "Сортировка по цене" },
+		"Min": { "ru": "Минимум" },
+		"Max": { "ru": "Максимум" },
+		"Exclude domains from my blacklist": {
+			"ru": "Исключить домены из моего чёрного списка"
+		},
+		"Site for which to exclude the blacklist.": {
+			"ru": "Сайт, для которого необходимо исключить чёрный список"
+		},
+		"Get all available domains.": {
+			"ru": "Получить все доступные домены."
+		},
+		"No domains available.": { "ru": "Доступных доменов нет." },
+		"Failed to get domains.": { "ru": "Не удалось получить домены." },
+		"Get available domains": { "ru": "Получить доступные домены" },
+		"On success, this action will return <code>list</code>": {
+			"ru": "В случае успеха это действие вернёт <code>список</code>"
+		},
+		"which contains available to order domains.": {
+			"ru": ", который содержит доступные к заказу домены."
+		},
+		"If there are no domains available an empty <code>list</code> will be returned.": {
+			"ru": "Если нет доступных доменов, будет возвращен пустой <code>список</code>."
+		},
+		"Balance": { "ru": "Баланс" },
+		"Failed to get balance.": { "ru": "Не удалось получить баланс" },
+		"Get service balance": { "ru": "Получить баланс сервиса" },
+		"On success, this action will return <code>number</code>": {
+			"ru": "В случае успеха это действие вернёт <code>число</code>"
+		},
+		"equal to your balance": { "ru": ", равное вашему балансу" },
+		"You can apply this action to the current thread or to all new threads.": {
+			"ru": "Вы можете применить это действие к текущему потоку или ко всем новым потокам."
+		},
+		"If <code>strict mode</code> id enabled - <code>Fail</code> action will be called when any common error occurs.": {
+			"ru": "Если <code>строгий режим</code> включён - при возникновении любой обычной ошибки будет вызвано действие <code>Fail</code>."
+		},
+		"<code>Fail</code> errors can be handled with <code>Ignore Errors</code> action.": {
+			"ru": "Ошибки типа <code>Fail</code> могут быть обработаны действием <code>Игнорировать ошибки</code>."
+		},
+		"The <code>End Script</code> behavior can't be handled.": {
+			"ru": "Поведение <code>Прервать Скрипт</code> обработать не получится."
+		},
+		"If the message could not be parsed, <code>null</code> will be returned.": {
+			"ru": "Если сообщение не удалось распарсить, будет возвращён <code>null</code>."
+		},
+		"One word is enough.": {
+			"ru": "Достаточно одного слова."
+		},
+		"Time threshold": {
+			"ru": "Временной порог"
+		},
+		"Maximum execution time.": {
+			"ru": "Максимальное время выполнения."
+		},
+		"Perform an action no more than 1 second.": {
+			"ru": "Выполнять действие не более 1 секунды."
+		},
+		"Perform an action no more than 5 seconds.": {
+			"ru": "Выполнять действие не более 5 секунд."
+		},
+		"Perform an action no more than 10 seconds.": {
+			"ru": "Выполнять действие не более 10 секунд."
+		}
+	},
+	"browser": [],
+	"depends": [],
+	"embeddeddata": [],
+	"engine": [
+		"internal/storage.js",
+		"engine.js",
+		"internal/tools.js",
+		"internal/request.js",
+		"internal/errors.js"
+	],
+	"languages": [],
+	"modules": [],
+	"is_autogenerated": true
+}
