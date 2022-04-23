@@ -17,8 +17,6 @@ Cloud-based service for incoming email messages.
 
 # Features
 
-## List of implemented APIs
-
 -   Get email address - https://bit.ly/3myvFtt, https://bit.ly/3Hge6WV
 -   Get message - https://bit.ly/3JjSdI2
 -   Close email - https://bit.ly/3JjY9Rq
@@ -58,7 +56,9 @@ Behavior can be reassigned, each error has its own ID.
 ![errors](./src-docs/errors.png)
 
 `Common` errors - if they occur, the `Fail` action is called.
+
 `Fatal` errors - if they occur, the `End Script` action is called.
+
 `Ignored` errors are ignored.
 
 ## Built-in debugger
