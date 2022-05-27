@@ -74,10 +74,8 @@ Shows queries sent, time metrics in ms, errors text, etc.
 
 [My referral link](https://kopeechka.store/?ref=1232) of Kopeechka.store.
 
-# Questions and suggestions
+# Suggestions
 
 If you have any questions or suggestions, please contact me:
 
 -   Email: mail.to.sadzurami@gmail.com
--   Telegram: https://t.me/sadzurami
--   Discord: Sadzurami#3140
