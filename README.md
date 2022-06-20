@@ -17,8 +17,6 @@ Cloud-based service for incoming email messages.
 
 # Features
 
-## List of implemented APIs
-
 -   Get email address - https://bit.ly/3myvFtt, https://bit.ly/3Hge6WV
 -   Get message - https://bit.ly/3JjSdI2
 -   Close email - https://bit.ly/3JjY9Rq
@@ -58,7 +56,9 @@ Behavior can be reassigned, each error has its own ID.
 ![errors](./src-docs/errors.png)
 
 `Common` errors - if they occur, the `Fail` action is called.
+
 `Fatal` errors - if they occur, the `End Script` action is called.
+
 `Ignored` errors are ignored.
 
 ## Built-in debugger
@@ -72,10 +72,13 @@ Shows queries sent, time metrics in ms, errors text, etc.
 
 [Official topic](https://community.bablosoft.com/topic/19063/kopeechkas-wrapper-around-kopeechka-store-api) on the Browser Automation Studio forum.
 
+<<<<<<< HEAD
+=======
+[My referral link](https://kopeechka.store/?ref=1232) of Kopeechka.store.
+
+>>>>>>> cba2f92472a3fd17382d05ee88d008d8ba34cb01
 # Suggestions
 
 If you have any questions or suggestions, please contact me:
 
 -   Email: mail.to.sadzurami@gmail.com
--   Telegram: https://t.me/sadzurami
--   Discord: Sadzurami#3140
