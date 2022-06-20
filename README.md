@@ -71,6 +71,7 @@ Shows queries sent, time metrics in ms, errors text, etc.
 # More
 
 [Official topic](https://community.bablosoft.com/topic/19063/kopeechkas-wrapper-around-kopeechka-store-api) on the Browser Automation Studio forum.
+
 [My referral link](https://kopeechka.store/?ref=1232) of Kopeechka.store.
 
 # Suggestions
