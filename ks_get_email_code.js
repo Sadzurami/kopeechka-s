@@ -8,6 +8,7 @@ _call_function(_KS.getEmail, {
   email: (<%= email %>),
   regex: (<%= regex %>),
   clear: (<%= clear %>),
+  soft: (<%= soft %>),
   investor: (<%= investor %>),
   timeout:  (<%= timeout %>) * 1000,
   interval:  (<%= interval %>) * 1000,

@@ -94,10 +94,11 @@ _KS = {
 			'regex',
 			'investor',
 			'subject',
-			'clear'
+			'clear',
+			'soft'
 		])
 
-		params.soft = '7'
+		params.soft = params.soft || '7'
 		params.clear = Number(params.clear) || 0
 		params.investor = Number(params.investor) || 0
 

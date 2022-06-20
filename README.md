@@ -72,7 +72,7 @@ Shows queries sent, time metrics in ms, errors text, etc.
 
 [Official topic](https://community.bablosoft.com/topic/19063/kopeechkas-wrapper-around-kopeechka-store-api) on the Browser Automation Studio forum.
 
-# Questions and suggestions
+# Suggestions
 
 If you have any questions or suggestions, please contact me:
 

@@ -11,10 +11,10 @@
 		"ru": "Почты Kopeechka.store"
 	},
 	"major_version": 1,
-	"minor_version": 7,
+	"minor_version": 8,
 	"developer_name": "Sadzurami",
 	"developer_email": "mail.to.sadzurami@gmail.com",
-	"developer_site": "https://community.bablosoft.com/user/sadzurami",
+	"developer_site": "https://github.com/Sadzurami",
 	"api_version": 1,
 	"actions": [
 		{
@@ -424,6 +424,15 @@
 		},
 		"Perform an action no more than 10 seconds.": {
 			"ru": "Выполнять действие не более 10 секунд."
+		},
+		"Dev id": {
+			"ru": "ID разработчика"
+		},
+		"Developer referral ID. You can find out about it in support.": {
+			"ru": "Реферальный идентификатор разработчика. Вы узнать о нём в поддержке."
+		},
+		"You have decided to share your money from lunches with the developer of this module. Thank you!": {
+			"ru": "Вы решили поделиться своими деньгами от обедов с разработчиком этого модуля. Спасибо!"
 		}
 	},
 	"browser": [],

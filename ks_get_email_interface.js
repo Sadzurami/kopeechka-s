@@ -114,6 +114,20 @@
 				]
 			}
 		}) %>
+		<%= _.template($('#input_constructor').html())({
+			id: "soft",
+			description: tr("Dev id"),
+			default_selector: "string",
+			value_string: "",
+			help: {
+				description: tr("Developer referral ID. You can find out about it in support."),
+				examples: [
+					{code: "55"},
+					{code: "101"},
+          {code: tr("leave blank"), description: tr("You have decided to share your money from lunches with the developer of this module. Thank you!")}
+				]
+			}
+		}) %>
 		<span data-preserve="true" data-preserve-type="check" data-preserve-id="clear">
 			<input type="checkbox" id="clear" style="margin-left:25px"/> 
 			<label for="clear"><span class="tr">Exclude email addresses with special characters</span> <code>- . _ +</code></label>

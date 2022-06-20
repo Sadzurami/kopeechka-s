@@ -74,7 +74,7 @@ _KS.request = {
 		var interval = Number(ctxt.interval) || 2000
 
 		var headers =
-			'User-Agent: KopeechkaSBAS/1.7\r\nAccept: application/json\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive'
+			'User-Agent: KopeechkaSBAS/1.8\r\nAccept: application/json\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive'
 
 		var response = null
 		var responseTime = null

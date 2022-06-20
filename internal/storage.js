@@ -15,14 +15,15 @@ function _KStorageLocal() {
 }
 _KStorageLocal.prototype = Object.create(_KStorage.prototype)
 _KStorageLocal.prototype.set = function (key, value) {
-	return (this.db[md5(key)] = value)
+	this.db[md5(key)] = value
+	return void 0
 }
 _KStorageLocal.prototype.get = function (key) {
-	return this.db[md5(key)] || ''
+	return JSON.parse(JSON.stringify(this.db[md5(key)] || ''))
 }
 _KStorageLocal.prototype.remove = function (key) {
 	delete this.db[md5(key)]
-	return
+	return void 0
 }
 
 function _KStorageGlobal() {

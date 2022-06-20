@@ -31,6 +31,7 @@ var sender = GetInputConstructorValue('sender', loader)
 var subject = GetInputConstructorValue('subject', loader)
 var email = GetInputConstructorValue('email', loader)
 var regex = GetInputConstructorValue('regex', loader)
+var soft = GetInputConstructorValue('soft', loader)
 
 var clear = $('#clear').is(':checked')
 var investor = $('#investor').is(':checked')
@@ -48,13 +49,14 @@ try {
 			subject: subject['updated'],
 			email: email['updated'],
 			regex: regex['updated'],
+			soft: soft['updated'],
 			clear: clear,
 			investor: investor,
 			strictMode: strictMode,
 			timeout: timeout['updated'],
 			maxTime: maxTime['updated'],
 			interval: interval['updated'],
-			variable: 'VAR_' + Save
+			variable: 'VAR_' + Save,
 		})
 	code = Normalize(code, 0)
 	BrowserAutomationStudio_Append(
