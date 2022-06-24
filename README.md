@@ -2,12 +2,6 @@
 
 A JavaScript wrapper and GUI for [Browser Automation Studio](https://bablosoft.com/shop/BrowserAutomationStudio) around the [kopeechka.store](https://sites.google.com/view/kopeechka-store-knowledgebase/eng/api-documentation/%D0%BF%D0%BE%D1%87%D1%82%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%B0%D1%86%D0%B8%D0%B8-eng?authuser=0) api.
 
-Cloud-based service for incoming email messages.
-
--   Huge bank of trusted email domains (gmail.com, hotmail.\*, outlook.\*, mail.com, etc.)
--   Minimal risk of blocking
--   Fast integration
-
 # Installation
 
 1. Download the latest version of [KopeechkaS](https://community.bablosoft.com/topic/19063/kopeechkas-wrapper-around-kopeechka-store-api) or clone this repository and zip it.
