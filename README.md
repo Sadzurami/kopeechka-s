@@ -1,5 +1,7 @@
 # KopeechkaS
 
+**Archived: Kopeechka.store is shut down.**
+
 A JavaScript wrapper and GUI for [Browser Automation Studio](https://bablosoft.com/shop/BrowserAutomationStudio) around the [kopeechka.store](https://sites.google.com/view/kopeechka-store-knowledgebase/eng/api-documentation/%D0%BF%D0%BE%D1%87%D1%82%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%B0%D1%86%D0%B8%D0%B8-eng?authuser=0) api.
 
 # Installation
@@ -67,9 +69,3 @@ Shows queries sent, time metrics in ms, errors text, etc.
 [Official topic](https://community.bablosoft.com/topic/19063/kopeechkas-wrapper-around-kopeechka-store-api) on the Browser Automation Studio forum.
 
 [My referral link](https://kopeechka.store/?ref=1232) of Kopeechka.store.
-
-# Suggestions
-
-If you have any questions or suggestions, please contact me:
-
--   Email: mail.to.sadzurami@gmail.com
